@@ -2,7 +2,7 @@ import sqlite3
 import helpers
 import os
 
-DATABASE = os.path.join("database", "message_list.db")
+DATABASE = "/var/www/aws_flask/voip-forum-api/database/message_list.db"
 
 class Database:
 	def __init__(self):
