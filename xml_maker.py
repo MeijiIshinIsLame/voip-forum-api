@@ -2,7 +2,7 @@ import os
 import db_controller
 import helpers
 
-ROOT_PATH = "/var/www/aws_flask/voip-forum-api"
+ROOT_PATH = "var/www/aws_flask/voip-forum-api"
 XML_FILE = os.path.join(ROOT_PATH, "static/instructions.xml")
 
 def make_xml():
