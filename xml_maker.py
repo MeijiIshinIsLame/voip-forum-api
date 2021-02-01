@@ -2,7 +2,8 @@ import os
 import db_controller
 import helpers
 
-XML_FILE = "static/instructions.xml"
+ROOT_PATH = os.environ.get('ROOT_PATH')
+XML_FILE = os.path.join(ROOT_PATH, "static/instructions.xml")
 
 def make_xml():
 	FRONT = "<Response>\n"
