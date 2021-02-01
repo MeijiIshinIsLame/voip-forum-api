@@ -1,5 +1,8 @@
 import sqlite3
 import helpers
+import os
+
+DATABASE = os.path.join("database", "message_list.db")
 
 class Database:
 	def __init__(self):
@@ -7,7 +10,7 @@ class Database:
 		self.create_table_if_none()
 
 	def connect_to_db(self):
-		conn = sqlite3.connect("database/message_list.db")
+		conn = sqlite3.connect(DATABASE)
 		return conn, conn.cursor()
 
 	def create_table_if_none(self):
