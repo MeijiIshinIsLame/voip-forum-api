@@ -2,7 +2,7 @@ import sqlite3
 import helpers
 import os
 
-ROOT_PATH = os.environ.get('ROOT_PATH')
+ROOT_PATH = "/var/www/aws_flask/voip-forum-api"
 DATABASE = os.path.join(ROOT_PATH, "database/message_list.db")
 
 class Database:
